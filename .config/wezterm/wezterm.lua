@@ -9,7 +9,7 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 config.color_scheme = 'Google (dark) (terminal.sexy)'
 
-config.font = wezterm.font 'JetBrainsMonoNL NF'
+--config.font = wezterm.font('GohuFont uni14 Nerd Font', {weight = 'Bold'})
 config.font_size = 14
 
 config.enable_tab_bar = false
