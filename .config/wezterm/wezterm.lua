@@ -14,7 +14,7 @@ config.font_size = 14
 
 config.enable_tab_bar = false
 
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 
 config.window_decorations = "NONE"
 
