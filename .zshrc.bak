@@ -4,19 +4,6 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH=/home/mateus/mx/:$PATH
-export JAVA_HOME=/home/mateus/.mx/jdks/labsjdk-ce-19-jvmci-23.0-b04
-
-export GRAAL_NODE=/home/mateus/nodeprof-graalvm/graal/sdk/latest_graalvm_home/bin/node
-export NODEPROF_HOME=/home/mateus/nodeprof-graalvm/nodeprof.js/
-export THE_TOOL_HOME=/home/mateus/Dasty/
-
-#export JVMCI_USE_INCUBATOR_MODULES=true
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -115,13 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+export PATH="$PATH:/home/mateus/twmn-auth"
 
-if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
-    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
-fi
-
-# Open in tmux popup if on tmux, otherwise use --height mode
-export FZF_DEFAULT_OPTS='--tmux center'
-eval "$(fzf --zsh)"
+alias cl="clear"
+alias work="cd ~/Documents/"
 
 export PATH=$PATH:/home/mateus/.spicetify
